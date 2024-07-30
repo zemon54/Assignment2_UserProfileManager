@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvSettingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/rgNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="107dp">
+
+        <RadioButton
+            android:id="@+id/rbEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:text="Enable Notifications" />
+
+        <RadioButton
+            android:id="@+id/rbDisable"
+            android:layout_width="199dp"
+            android:layout_height="56dp"
+            android:text="Disable Notifications" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSaveSettings"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:text="Save Settings" />
+</LinearLayout>
